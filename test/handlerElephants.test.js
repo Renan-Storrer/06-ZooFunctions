@@ -15,4 +15,7 @@ describe('Testes da função HandlerElephants', () => {
   it('Retorna "UNDEFINED" se a função não tem parametro?', () => {
     expect(handlerElephants()).toBe(undefined);
   });
+  it('o parametro nao é uma função?', () => {
+    expect(handlerElephants('xablau')).toBe(null);
+  });
 });
